@@ -1,0 +1,332 @@
+@font-face {
+    font-family: 'alegreya';
+    src: url('./fonts/alegreyasanssc-black-webfont.woff2') format('woff2'),
+         url('./fonts/alegreyasanssc-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ 
+ 
+ 
+ :root {
+    --yellow: #ffc92f;
+    --red: #d82727;
+    --black: #1b1b1b;
+    --white:#fff;
+    --titlesFont: 'Yanone Kaffeesatz', Arial, sans-serif;
+}
+
+
+
+html,
+body { 
+   height:100%;
+}
+.wrapper{ 
+    overflow: hidden;
+    min-width: 1440px;
+}
+
+.container {
+   margin: 0 auto;
+   width: 1300px;
+}
+
+body {
+   font: 16px / 1.42 "Roboto", Arial, sans-serif; 
+   color: #212121;
+   -webkit-font-smoothing:antialiased;
+   -moz-osx-font-smoothinng: grayscale;
+   background: #fcf5e6;
+}
+
+ul{
+   margin: 0;
+   padding: 0;
+}
+
+ul > li {
+   list-style: none;
+}
+
+.hero {
+   height:20vh;
+   min-height: 30px;
+   background: url('./img/web-ready/bg/hero.jpg') center center / cover no-repeat; 
+   position: relative;
+   margin-bottom: 130px;
+
+}
+
+
+.header {
+   width:1290px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 27px;
+
+}
+
+.mail {
+   text-decoration: none;
+   text-align: center;
+   color:inherit;
+   transform: translate(10%, -30%);
+}
+.mail__title {
+   margin-bottom:3px;
+}
+
+.mail__content {
+   background: var(--black);
+   color: var(--yellow);
+   font-size: 16px;
+   padding: 5px 10px;
+}
+.hero__content {
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   width:1140px;
+   height:72%;
+}
+.man-img {
+   height:159px;
+   width: 260px;
+   transform: translateX(170%) translateY(-18%);
+   flex:1;
+   overflow: hidden;
+   position: relative; }
+
+.logo__pic {
+   transform: translate(10%, -12%);
+}
+
+.lined-text2 {
+   font-family: "alegreya", Arial, sans-serif;
+   color: #fff;
+   font-size: 25px;
+   text-transform: uppercase;
+   line-height: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   transform: translateX(30%) translateY(-183%);
+
+}
+
+.lined-text__word2 {
+   background: #000;
+   padding: 0 8px 8px ;
+   margin-top: -10px;
+  
+}
+.lined-text__word2--color-yellow {
+   color: var(--yellow);
+}
+
+.lined-text__word2:nth-child(2n) {
+   margin-left: 3px;
+}
+.buy-tshirts {
+   background: var(--yellow);
+   width: 1200px;
+   height:700px;
+   transform: translateX(17%) translateY(-12%);
+}
+.buy--tshirts-choise {
+   background:#fcf5e6;
+   width: 566px;
+   height:690px ;
+   transform: translateX(147%) translateY(-113%);
+}
+
+.rick-tshirts {
+   width: 450px;
+   height: 400px;
+   transform: translateX(20%) translateY(30%);
+}
+
+.buy-text {
+   font-family: var(--titlesFont);
+   text-transform: uppercase;
+	padding:4px 21px 1px 21px;
+   color:var(--black);
+   font-size: 40px;
+   font-weight: bold;
+   display: inline-block;
+   text-decoration: none;
+}
+.rick-price {
+   position: absolute;
+   width: 70px;
+   height: 30px;
+   background: #ffc92f;
+   transform: translateX(30%) translateY(300%);
+}
+.rick-price-amount {
+   font-family: var(--titlesFont);
+   text-transform: uppercase;
+   color:var(--black);
+   font-size: 30px;
+   font-weight: bold;
+   display: inline-block;
+   text-decoration: none;
+   transform: translateX(15%) translateY(-10%);
+}
+.buy--text__word {
+   color:#737373;
+   font-size: 15px;
+   text-decoration: none;
+   display: block;
+   transform: translateX(5%) translateY(200%);
+   margin-bottom: 15px;
+}
+.size-choise {
+   width: 40px;
+   height: 40px;
+   border: #737373;
+   border-style: solid;
+   border-width: 2px;
+   display:inline-block;
+   margin-top: 50px;
+   transform: translateX(50%) translateY(20%);
+}
+.size {
+   color:var(--black);
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 18px;
+}
+.size-no {
+   color:#737373;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+  
+}
+
+.size-choise:hover {
+   color:var(--black);
+   background: var(--yellow);
+}
+.size-choise-active .size-choise {
+   color:var(--black);
+   background: var(--yellow);
+}
+
+.size-choise-no {
+   width: 40px;
+   height: 40px;
+   border: #737373;
+   border-width: 2px;
+   border-style: solid;
+   display:inline-block;
+   margin-top: 50px;
+   text-align: center;
+   transform: translateX(50%) translateY(20%);
+}
+
+.circle {
+   position:relative;
+   width:25px;
+   height:25px;
+   background: var(--yellow);
+   border-radius: 50%;
+}
+
+.circle::after {
+   content: '';
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   bottom:15px;
+   left:15px;
+   background: #000;
+}
+
+.btn-text {
+   width: 250px;
+   height: 50px;
+   background: var(--yellow);
+   transform: translateX(10%) translateY(150%);
+}
+
+.btn-buy-text {
+   text-decoration: none;
+   font-family: var(--titlesFont);
+   text-transform: uppercase;
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+  justify-content: center;
+  margin-left: 90px;
+}
+
+.btn-text:hover {
+   background:var(--red);
+}
+.btn-buy-text:hover {
+   color:#fff;
+}
+
+
+.menu {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: translateX(0%) translateY(-1750%);
+  
+}
+
+.menu-item {
+   margin-right: 40px;
+}
+
+.menu-item:last-child {
+   margin-right: 0;
+}
+
+.menu-link{
+   font-family: var(--titlesFont);
+   text-transform: uppercase;
+   padding:4px 21px 1px 21px;
+   color:var(--black);
+   font-size: 24px;
+   font-weight: bold;
+   display: inline-block;
+   text-decoration: none;
+}
+
+.menu-link:hover {
+   color:var(--red);
+}
+
+.menu-item-active .menu-link {
+   color:var(--yellow);
+   background:var(--black);
+}
+
+.inf {
+   width:1200px;
+   height: 400px;
+   color: #fcf5e6;
+   border: var(--yellow);
+   border-width: 6px;
+   border-style: solid;
+   transform: translateX(16%) translateY(-150%);
+
+}
+
+.inf-general {
+   color: #000;
+   font-size: 15px;
+   font-weight:100;
+}
